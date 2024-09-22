@@ -4,9 +4,9 @@ import { LanguageSelect } from './language-select'
 
 export const Navbar = () => {
   return (
-    <div className="container">
+    <div className="pl-8 pr-8">
       <nav className="flex justify-between items-center pt-4 text-white">
-        <LanguageSelect></LanguageSelect>
+        <LanguageSelect />
         <ul className="flex space-x-6 items-center">
           <li>
             <Link href="#" className="font-semibold">
@@ -15,7 +15,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link href="#" className="font-semibold">
-              Como configurar
+              Como utilizar
             </Link>
           </li>
           <li>

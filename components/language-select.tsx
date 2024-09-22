@@ -13,7 +13,7 @@ import {
 export function LanguageSelect() {
   return (
     <Select>
-      <SelectTrigger className="w-[150px] bg-hero-gradient-start">
+      <SelectTrigger className="w-[150px] bg-keiko-bg-primary">
         <SelectValue placeholder="🇧🇷 Português" />
       </SelectTrigger>
       <SelectContent>
