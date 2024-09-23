@@ -12,9 +12,15 @@ export function ManagmentButtons({ className }: { className?: string }) {
       )}
     >
       <div className="flex items-center justify-center space-x-2 mb-24 h-full">
-        <Button size="sm" className='bg-[#4E5058] shadow-lg font-semibold'>📝 Editar</Button>
-        <Button size="sm" className='bg-[#4E5058] shadow-lg font-semibold'>⏸️ Pausar</Button>
-        <Button size="sm" className='bg-[#4E5058] shadow-lg font-semibold'>🚫 Desabilitar</Button>
+        <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold ">
+          📝 Editar
+        </Button>
+        <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold">
+          ⏸️ Pausar
+        </Button>
+        <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold">
+          🚫 Desabilitar
+        </Button>
       </div>
     </div>
   )
