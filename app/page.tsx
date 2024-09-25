@@ -2,6 +2,7 @@ import HeroSection from './hero-section'
 import AboutSection from './about-section'
 import AdvantageSection from './advantages-section'
 import HowToUseSection from './how-to-use-section'
+import FunctionsSection from './functions-section'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutSection />
         <AdvantageSection />
         <HowToUseSection />
+        <FunctionsSection />
       </main>
     </>
   )

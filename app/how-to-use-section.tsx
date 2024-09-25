@@ -65,7 +65,7 @@ export default function HowToUseSection() {
             </div>
           </div>
         </div>
-        <div className="pt-36">
+        <div className="pt-32">
           <Image
             src={'/KEIKO_HOW_TO_USE.gif'}
             alt="Keiko-Image-01"
