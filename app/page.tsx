@@ -2,7 +2,7 @@ import HeroSection from './hero-section'
 import AboutSection from './about-section'
 import AdvantageSection from './advantages-section'
 import HowToUseSection from './how-to-use-section'
-import FunctionsSection from './functions-section'
+import FeaturesSection from './features-section'
 import FooterSection from './footer-section'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <AboutSection />
         <AdvantageSection />
         <HowToUseSection />
-        <FunctionsSection />
+        <FeaturesSection />
         <FooterSection />
       </main>
     </>

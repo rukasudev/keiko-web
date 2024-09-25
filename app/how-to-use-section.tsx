@@ -3,7 +3,10 @@ import Image from 'next/image'
 
 export default function HowToUseSection() {
   return (
-    <section className="bg-white flex flex-col justify-center items-center pl-28 pr-28 pt-16">
+    <section
+      id="how-to-use-section"
+      className="bg-white flex flex-col justify-center items-center pl-28 pr-28 pt-16"
+    >
       <div className="container flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <Label className="text-3xl text-black font-bold">

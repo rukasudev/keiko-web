@@ -3,8 +3,9 @@ import { Label } from '@/components/ui/label'
 import { BellRing, Globe, HandHelping, Swords } from 'lucide-react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
-export default function FunctionsSection() {
+export default function FeaturesSection() {
   return (
     <>
       <section className="flex flex-col">
@@ -15,7 +16,10 @@ export default function FunctionsSection() {
             d="M0,256L80,229.3C160,203,320,149,480,149.3C640,149,800,203,960,224C1120,245,1280,235,1360,229.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <div className="bg-keiko-orange flex flex-col justify-center items-center pl-28 pr-28 pb-24">
+        <div
+          id="features-section"
+          className="bg-keiko-orange flex flex-col justify-center items-center pl-28 pr-28 pb-24"
+        >
           <div className="container flex flex-col items-center space-y-8 pt-24">
             <Label className="text-3xl text-white font-bold text-center">
               Descubra como o Keiko pode te ajudar!
@@ -86,8 +90,14 @@ export default function FunctionsSection() {
                 comunidade ficar ainda mais divertida.
               </Label>
               <div className="flex items-center justify-center pt-4">
-                <Button className="bg-keiko-blue w-1/3 font-bold" size="lg">
-                  Convidar agora
+                <Button className="bg-keiko-blue w-1/3 font-bold" size="lg" asChild>
+                  <Link
+                    href="https:/keikobot.com/invite"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Convidar agora
+                  </Link>
                 </Button>
               </div>
             </div>

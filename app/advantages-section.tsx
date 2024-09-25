@@ -58,7 +58,10 @@ const features = [
 
 export default function AdvantageSection() {
   return (
-    <section className="bg-keiko-bg-secondary flex flex-col justify-center items-center pl-28 pr-28 pt-16 pb-24 space-x-8 space-y-8">
+    <section
+      id="advantage-section"
+      className="bg-keiko-bg-secondary flex flex-col justify-center items-center pl-28 pr-28 pt-16 pb-24 space-x-8 space-y-8"
+    >
       <div className="container flex flex-col items-center">
         <Label className="text-3xl text-black font-bold">
           Com diferenciais únicos!

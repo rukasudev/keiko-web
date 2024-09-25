@@ -4,23 +4,31 @@ import Link from 'next/link'
 export default function FooterSection() {
   return (
     <>
-      <section className="flex container flex-col bg-white pt-8 pb-8">
+      <section
+        id="footer-section"
+        className="flex container flex-col bg-white pt-8 pb-8"
+      >
         <div className="flex items-start justify-center space-x-24">
           <div className="flex flex-col space-y-4">
             <Label className="text-keiko-gray text-md pb-4">AUUUUUU</Label>
-            <Link href="#" className="text-sm">
+            <Link href="#about-section" className="text-sm">
               Sobre
             </Link>
-            <Link href="#" className="text-sm">
+            <Link href="#advantage-section" className="text-sm">
               Diferenciais únicos
             </Link>
-            <Link href="#" className="text-sm">
+            <Link href="#features-section" className="text-sm">
               Funcionalidades
             </Link>
-            <Link href="#" className="text-sm">
+            <Link href="#how-to-use-section" className="text-sm">
               Como utilizar
             </Link>
-            <Link href="#" className="text-sm">
+            <Link
+              href="https:/keikobot.com/support"
+              rel="noreferrer noopener"
+              target="_blank"
+              className="text-sm"
+            >
               Suporte
             </Link>
           </div>
@@ -40,7 +48,7 @@ export default function FooterSection() {
             </Link>
           </div>
           <div className="flex flex-col space-y-4">
-            <Label className="text-keiko-gray text-md pb-4">Legal</Label>
+            <Label className="text-keiko-gray text-md pb-4">Legal :p</Label>
             <Link href="#" className="text-sm">
               Privacy Policy
             </Link>

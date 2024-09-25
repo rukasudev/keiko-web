@@ -3,6 +3,7 @@ import { Navbar } from '@/components/navbar'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -15,8 +16,14 @@ export default function HeroSection() {
             Um leal companheiro do Discord com moderações, utilidades e alertas!
             ✨
           </Label>
-          <Button className="bg-keiko-orange w-1/3" size="lg">
-            Convidar
+          <Button className="bg-keiko-orange w-1/3" size="lg" asChild>
+            <Link
+              href="https:/keikobot.com/invite"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              Convidar
+            </Link>
           </Button>
         </div>
         <div className="flex items-center flex-col pb-8 pr-6">
@@ -46,7 +53,7 @@ export default function HeroSection() {
           <Dots />
         </div>
       </div>
-      <div className="w-screen">
+      <div className="w-screen" id="about-section">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 780 134"
