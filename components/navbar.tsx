@@ -15,6 +15,11 @@ export const Navbar = () => {
           </li>
           <li>
             <Link href="#" className="font-semibold">
+              Diferenciais únicos
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="font-semibold">
               Como utilizar
             </Link>
           </li>
@@ -24,12 +29,7 @@ export const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="#" className="font-semibold">
-              Suporte
-            </Link>
-          </li>
-          <li>
-            <Button className="p-2 bg-keiko-orange font-bold">Convidar</Button>
+            <Button className="p-2 bg-keiko-orange font-bold">Suporte</Button>
           </li>
         </ul>
       </nav>

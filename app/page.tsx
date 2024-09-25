@@ -3,6 +3,7 @@ import AboutSection from './about-section'
 import AdvantageSection from './advantages-section'
 import HowToUseSection from './how-to-use-section'
 import FunctionsSection from './functions-section'
+import FooterSection from './footer-section'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <AdvantageSection />
         <HowToUseSection />
         <FunctionsSection />
+        <FooterSection />
       </main>
     </>
   )
