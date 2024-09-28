@@ -90,7 +90,11 @@ export default function FeaturesSection() {
                 comunidade ficar ainda mais divertida.
               </Label>
               <div className="flex items-center justify-center pt-4">
-                <Button className="bg-keiko-blue w-1/3 font-bold" size="lg" asChild>
+                <Button
+                  className="bg-keiko-blue w-1/3 font-bold"
+                  size="lg"
+                  asChild
+                >
                   <Link
                     href="https:/keikobot.com/invite"
                     rel="noreferrer noopener"

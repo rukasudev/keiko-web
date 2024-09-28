@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section className="bg-keiko-bg-primary flex flex-col">
       <Navbar />
-      <div className="container md:h-[500px] flex flex-col md:flex-row justify-center items-center">
+      <div className="container md:h-[500px] flex flex-col md:flex-row justify-center items-center pb-4 md:pb-0">
         <div className="flex flex-col md:pl-24 md:pb-8 space-y-2 items-center md:items-start pt-8 md:pt-0">
           <Label className="text-5xl text-white font-black">Keiko Bot</Label>
           <Label className="text-1xl text-white text-center text-balance lg:w-[80%] md:text-left">

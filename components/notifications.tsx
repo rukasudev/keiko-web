@@ -53,7 +53,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
     >
       <div className="flex flex-row items-center gap-3">
         <div
-          className="flex size-10 items-center justify-center rounded-2xl"
+          className="flex size-10 min-w-10 items-center justify-center rounded-2xl"
           style={{
             backgroundColor: color,
           }}
@@ -68,13 +68,15 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
-            <span className="text-sm sm:text-lg">{name}</span>
+            <span className="text-sm">{name}</span>
             <span className="mx-1">·</span>
             <span className="text-xs text-gray-500">{time}</span>
           </figcaption>
           <figcaption className="flex space-x-1">
-            <p className="text-sm font-normal text-[#7289da]">@everyone</p>
             <p className="text-sm font-normal dark:text-white/60">
+              <span className="text-sm font-normal text-[#7289da]">
+                @everyone{' '}
+              </span>
               {description}
             </p>
           </figcaption>
