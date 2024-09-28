@@ -12,17 +12,19 @@ import {
 
 export function LanguageSelect() {
   return (
-    <Select>
-      <SelectTrigger className="w-[150px] bg-keiko-bg-primary">
-        <SelectValue placeholder="🇧🇷 Português" />
-      </SelectTrigger>
-      <SelectContent>
-        <SelectGroup>
-          <SelectLabel>Idioma</SelectLabel>
-          <SelectItem value="pt-br">🇧🇷 Português</SelectItem>
-          <SelectItem value="en-us">🇺🇸 English</SelectItem>
-        </SelectGroup>
-      </SelectContent>
-    </Select>
+    <div className="container flex justify-end md:justify-between">
+      <Select>
+        <SelectTrigger className="w-[150px] bg-keiko-bg-primary">
+          <SelectValue placeholder="🇧🇷 Português" />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectLabel>Idioma</SelectLabel>
+            <SelectItem value="pt-br">🇧🇷 Português</SelectItem>
+            <SelectItem value="en-us">🇺🇸 English</SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+    </div>
   )
 }

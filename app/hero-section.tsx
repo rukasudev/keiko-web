@@ -7,12 +7,12 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="bg-gradient-to-r bg-keiko-bg-primary grid">
+    <section className="bg-keiko-bg-primary flex flex-col">
       <Navbar />
-      <div className="container h-[500px] flex justify-center items-center">
-        <div className="flex flex-col pl-24 pb-8 space-y-2">
+      <div className="container md:h-[500px] flex flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-col md:pl-24 md:pb-8 space-y-2 items-center md:items-start pt-8 md:pt-0">
           <Label className="text-5xl text-white font-black">Keiko Bot</Label>
-          <Label className="text-1xl text-white w-[80%]">
+          <Label className="text-1xl text-white text-center text-balance lg:w-[80%] md:text-left">
             Um leal companheiro do Discord com moderações, utilidades e alertas!
             ✨
           </Label>
@@ -26,14 +26,14 @@ export default function HeroSection() {
             </Link>
           </Button>
         </div>
-        <div className="flex items-center flex-col pb-8 pr-6">
+        <div className="flex items-center flex-col md:pb-8 md:pr-6">
           <Image
             src={'/KEIKO_01.png'}
             alt="Keiko-Image-01"
             width={350}
             height={350}
           />
-          <div className="bg-white w-[90%] h-24 rounded-md">
+          <div className="bg-white w-[90%] md:w-full lg:w-[90%] h-24 rounded-md">
             <div className="flex p-2 ml-4 space-x-1">
               <Label className="text-keiko-orange font-bold text-md">
                 Keiko
@@ -49,7 +49,7 @@ export default function HeroSection() {
             </Label>
           </div>
         </div>
-        <div className="pb-64">
+        <div className="pb-64 hidden md:block">
           <Dots />
         </div>
       </div>
