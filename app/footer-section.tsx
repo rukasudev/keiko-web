@@ -6,10 +6,10 @@ export default function FooterSection() {
     <>
       <section
         id="footer-section"
-        className="flex container flex-col bg-white pt-8 pb-8"
+        className="container flex flex-col bg-white pt-8 pb-8"
       >
-        <div className="flex items-start justify-center space-x-24">
-          <div className="flex flex-col space-y-4">
+        <div className="grid grid-cols-2 md:flex items-start justify-center md:space-x-24">
+          <div className="flex items-center flex-col space-y-4">
             <Label className="text-keiko-gray text-md pb-4">AUUUUUU</Label>
             <Link href="#about-section" className="text-sm">
               Sobre
@@ -32,23 +32,8 @@ export default function FooterSection() {
               Suporte
             </Link>
           </div>
-          <div className="flex flex-col space-y-4">
+          <div className="flex items-center flex-col space-y-4">
             <Label className="text-keiko-gray text-md pb-4">Woof woof</Label>
-            <Link href="#" className="text-sm">
-              News
-            </Link>
-            <Link href="#" className="text-sm">
-              Status Page
-            </Link>
-            <Link href="#" className="text-sm">
-              Documentação
-            </Link>
-            <Link href="#" className="text-sm">
-              Repositório
-            </Link>
-          </div>
-          <div className="flex flex-col space-y-4">
-            <Label className="text-keiko-gray text-md pb-4">Legal :p</Label>
             <Link href="#" className="text-sm">
               Privacy Policy
             </Link>

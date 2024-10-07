@@ -9,8 +9,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Keiko Bot',
-  description: 'Keiko Bot is a Discord bot that helps you manage your server.',
+  title: 'Keiko Bot ✨',
+  description:
+    'Keiko Bot is an multi-purpose Discord bot that helps you manage your server with ease.',
 }
 
 export default function RootLayout({
@@ -20,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+      ></meta>
       <body
         className={`${inter.variable} font-inter tracking-tight antialiased`}
       >

@@ -9,7 +9,7 @@ export default function FeaturesSection() {
   return (
     <>
       <section className="flex flex-col">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
           <path
             fill="#FC9842"
             fillOpacity="1"
@@ -18,16 +18,16 @@ export default function FeaturesSection() {
         </svg>
         <div
           id="features-section"
-          className="bg-keiko-orange flex flex-col justify-center items-center pl-28 pr-28 pb-24"
+          className="bg-keiko-orange flex flex-col justify-center items-center md:pl-28 md:pr-28 md:pb-24"
         >
           <div className="container flex flex-col items-center space-y-8 pt-24">
             <Label className="text-3xl text-white font-bold text-center">
               Descubra como o Keiko pode te ajudar!
             </Label>
           </div>
-          <div className="container grid grid-cols-2 gap-24 pt-16 justify-items-stretch">
+          <div className="container grid gap-12 md:grid-cols-2 md:gap-24 pt-16 justify-items-end">
             <div className="flex items-center space-x-4">
-              <div className="bg-white/10 w-16 h-16 flex items-center justify-center rounded-xl">
+              <div className="bg-white/10 min-w-16 w-16 min-h-16 h-16 flex items-center justify-center rounded-xl">
                 <BellRing color="white" />
               </div>
               <div className="flex flex-col">
@@ -40,7 +40,7 @@ export default function FeaturesSection() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="bg-white/10 w-16 h-16 flex items-center justify-center rounded-xl">
+              <div className="bg-white/10 min-w-16 w-16 min-h-16 h-16 flex items-center justify-center rounded-xl">
                 <Swords color="white" />
               </div>
               <div className="flex flex-col">
@@ -54,7 +54,7 @@ export default function FeaturesSection() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="bg-white/10 w-16 h-16 flex items-center justify-center rounded-xl">
+              <div className="bg-white/10 min-w-16 w-16 min-h-16 h-16 flex items-center justify-center rounded-xl">
                 <Globe color="white" />
               </div>
               <div className="flex flex-col">
@@ -68,7 +68,7 @@ export default function FeaturesSection() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <div className="bg-white/10 w-16 h-16 flex items-center justify-center rounded-xl">
+              <div className="bg-white/10 min-w-16 w-16 min-h-16 h-16 flex items-center justify-center rounded-xl">
                 <HandHelping color="white" />
               </div>
               <div className="flex flex-col">
@@ -80,7 +80,7 @@ export default function FeaturesSection() {
             </div>
           </div>
           <div className="w-full h-1 border-t-2 mt-32 mb-16" />
-          <div className="container flex space-y-2 space-x-2 items-center justify-center">
+          <div className="container flex flex-col md:flex-row space-y-2 space-x-2 items-center justify-center">
             <div className="flex flex-col space-y-2">
               <Label className="text-white text-3xl font-bold text-center">
                 Pronto para turbinar seu servidor?
