@@ -4,6 +4,7 @@ import { Dots } from '@/components/dots'
 import { Navbar } from '@/components/navbar'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
+import TypingAnimation from '@/components/ui/typing-animation'
 import { I18nContext } from '@/providers/i18nProvider'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -52,9 +53,11 @@ export default function HeroSection() {
                 </Label>
               </div>
             </div>
-            <Label className="pl-6 text-md font-bold text-keiko-gray">
-              {i18n.heroSection.chatBallon.message}
-            </Label>
+            <TypingAnimation
+              className="pl-6 text-md font-bold text-keiko-gray"
+              duration={100}
+              text={i18n.heroSection.chatBallon.message}
+            />
           </div>
         </div>
         <div className="pb-64 hidden md:block">
