@@ -15,7 +15,11 @@ export default function FeaturesSection() {
   return (
     <>
       <section className="flex flex-col">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 310">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 310"
+          className="-mb-1"
+        >
           <path
             fill="#FC9842"
             fillOpacity="1"
