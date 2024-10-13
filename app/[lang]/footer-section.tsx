@@ -30,7 +30,7 @@ export default function FooterSection() {
               {i18n.footerSection.links[3]}
             </Link>
             <Link
-              href="https:/keikobot.com/support"
+              href="https://api.keikobot.com/v1/support"
               rel="noreferrer noopener"
               target="_blank"
               className="text-sm"

@@ -26,7 +26,7 @@ export default function HeroSection() {
           </Label>
           <Button className="bg-keiko-orange w-1/3 font-bold" size="lg" asChild>
             <Link
-              href="https:/keikobot.com/invite"
+              href="https://api.keikobot.com/v1/invite"
               rel="noreferrer noopener"
               target="_blank"
             >

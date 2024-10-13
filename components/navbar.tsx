@@ -78,7 +78,7 @@ export const Navbar = () => {
             <li>
               <Button className="p-2 bg-keiko-bg-primary font-bold" asChild>
                 <Link
-                  href="https://keikobot.com/support"
+                  href="https://api.keikobot.com/v1/support"
                   rel="noreferrer noopener"
                   target="_blank"
                   className="w-full text-white"
@@ -103,7 +103,7 @@ export const Navbar = () => {
           <li>
             <Button className="p-2 bg-keiko-orange font-bold" asChild>
               <Link
-                href="https://keikobot.com/support"
+                href="https://api.keikobot.com/v1/support"
                 rel="noreferrer noopener"
                 target="_blank"
                 className="w-full"

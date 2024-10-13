@@ -101,7 +101,7 @@ export default function FeaturesSection() {
                   asChild
                 >
                   <Link
-                    href="https:/keikobot.com/invite"
+                    href="https://api.keikobot.com/v1/invite"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
