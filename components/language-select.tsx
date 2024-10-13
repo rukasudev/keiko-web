@@ -24,7 +24,7 @@ export function LanguageSelect() {
   }
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('userLang') || 'en'
+    const savedLang = localStorage.getItem('userLang') || 'pt'
     if (savedLang !== selectedLang) {
       setSelectedLang(savedLang)
       router.push(`/${savedLang}`)
