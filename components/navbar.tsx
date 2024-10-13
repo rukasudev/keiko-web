@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { Button } from './ui/button'
 import { LanguageSelect } from './language-select'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { I18nContext } from '@/providers/i18nProvider'
 
 export const Navbar = () => {
@@ -13,6 +13,14 @@ export const Navbar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen)
   }
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [isOpen])
 
   const navItems = [
     { href: '#about-section', label: i18n.navbar.about },
