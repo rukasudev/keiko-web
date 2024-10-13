@@ -61,7 +61,7 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
           {/* <span className="text-lg">{icon}</span> */}
           <Image
             src={`/${icon}.png`}
-            alt="Keiko-Face-Image-01"
+            alt="keiko-icon-image"
             width={400}
             height={400}
           />

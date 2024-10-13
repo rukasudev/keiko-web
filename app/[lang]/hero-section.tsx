@@ -1,51 +1,59 @@
+'use client'
+
 import { Dots } from '@/components/dots'
 import { Navbar } from '@/components/navbar'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
+import { I18nContext } from '@/providers/i18nProvider'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useContext } from 'react'
 
 export default function HeroSection() {
+  const { i18n } = useContext(I18nContext)
+
   return (
     <section className="bg-keiko-bg-primary flex flex-col">
       <Navbar />
       <div className="container md:h-[500px] flex flex-col md:flex-row justify-center items-center pb-4 md:pb-0">
         <div className="flex flex-col md:pl-24 md:pb-8 space-y-2 items-center md:items-start pt-8 md:pt-0">
-          <Label className="text-5xl text-white font-black">Keiko Bot</Label>
-          <Label className="text-1xl text-white text-center text-balance lg:w-[80%] md:text-left">
-            Um leal companheiro do Discord com moderações, utilidades e alertas!
-            ✨
+          <Label className="text-5xl text-white font-black">
+            {i18n.heroSection.title}
           </Label>
-          <Button className="bg-keiko-orange w-1/3" size="lg" asChild>
+          <Label className="text-1xl text-white text-center text-balance lg:w-[80%] md:text-left">
+            {i18n.heroSection.description}
+          </Label>
+          <Button className="bg-keiko-orange w-1/3 font-bold" size="lg" asChild>
             <Link
               href="https:/keikobot.com/invite"
               rel="noreferrer noopener"
               target="_blank"
             >
-              Convidar
+              {i18n.invitePrimary}
             </Link>
           </Button>
         </div>
         <div className="flex items-center flex-col md:pb-8 md:pr-6">
           <Image
             src={'/KEIKO_01.png'}
-            alt="Keiko-Image-01"
+            alt="keiko-hero-section-image-01"
+            priority
             width={350}
             height={350}
           />
           <div className="bg-white w-[90%] md:w-full lg:w-[90%] h-24 rounded-md">
             <div className="flex p-2 ml-4 space-x-1">
               <Label className="text-keiko-orange font-bold text-md">
-                Keiko
+                {i18n.heroSection.chatBallon.author}
               </Label>
               <div className="h-4 w-8 bg-keiko-blue rounded-sm mt-1 flex justify-center items-center">
                 <Label className="text-[0.5rem] text-white font-bold">
-                  APP
+                  {i18n.heroSection.chatBallon.label}
                 </Label>
               </div>
             </div>
             <Label className="pl-6 text-md font-bold text-keiko-gray">
-              Olá, eu sou o Keiko! 🐶
+              {i18n.heroSection.chatBallon.message}
             </Label>
           </div>
         </div>
@@ -58,7 +66,6 @@ export default function HeroSection() {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 780 134"
           width="100%"
-          height="auto"
           preserveAspectRatio="none"
           className="w-full h-auto"
         >

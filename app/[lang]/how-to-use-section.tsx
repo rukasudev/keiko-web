@@ -1,7 +1,13 @@
+'use client'
+
 import { Label } from '@/components/ui/label'
+import { I18nContext } from '@/providers/i18nProvider'
 import Image from 'next/image'
+import { useContext } from 'react'
 
 export default function HowToUseSection() {
+  const { i18n, lang } = useContext(I18nContext)
+
   return (
     <section
       id="how-to-use-section"
@@ -10,26 +16,26 @@ export default function HowToUseSection() {
       <div className="container flex flex-col items-center space-y-8">
         <div className="flex flex-col items-center">
           <Label className="text-2xl md:text-3xl text-black font-bold text-center text-pretty">
-            Configure tudo diretamente pelo Discord
+            {i18n.howToUseSection.title}
           </Label>
           <Label className="text-base text-center text-pretty text-keiko-gray">
-            Veja como é fácil chamar o Keiko e já sair se divertindo 🐶
+            {i18n.howToUseSection.description}
           </Label>
         </div>
         <div className="flex flex-col space-y-32 md:space-y-0 md:flex-row justify-center items-center">
           <div className="flex flex-col items-center h-14 w-14 rounded-full bg-blue-300 space-y-2 md:space-y-6">
             <Image
               src={'/KEIKO_FACE_01.png'}
-              alt="Keiko-Image-01"
+              alt="keiko-how-to-use-image-01"
               width={400}
               height={400}
             />
             <div className="flex flex-col text-center">
               <Label className="font-bold text-nowrap text-lg">
-                1. Convide Keiko
+                {i18n.howToUseSection.steps[0].title}
               </Label>
               <Label className="text-sm text-keiko-gray">
-                Adicione Keiko ao seu servidor do Discord.
+                {i18n.howToUseSection.steps[0].description}
               </Label>
             </div>
           </div>
@@ -37,16 +43,16 @@ export default function HowToUseSection() {
           <div className="flex flex-col items-center h-14 w-14 rounded-full bg-blue-300 space-y-2 md:space-y-6">
             <Image
               src={'/KEIKO_FACE_02.png'}
-              alt="Keiko-Image-02"
+              alt="keiko-how-to-use-image-02"
               width={400}
               height={400}
             />
             <div className="flex flex-col text-center">
               <Label className="font-bold text-nowrap text-lg">
-                2. Utilize os comandos com /
+                {i18n.howToUseSection.steps[1].title}
               </Label>
               <Label className="text-sm text-keiko-gray">
-                Use o comando /ajuda para ver todas as funcionalidades.
+                {i18n.howToUseSection.steps[1].description}
               </Label>
             </div>
           </div>
@@ -54,24 +60,24 @@ export default function HowToUseSection() {
           <div className="flex flex-col items-center h-14 w-14 rounded-full bg-blue-300 space-y-2 md:space-y-6">
             <Image
               src={'/KEIKO_FACE_03.png'}
-              alt="Keiko-Image-01"
+              alt="keiko-how-to-use-image-03"
               width={400}
               height={400}
             />
             <div className="flex flex-col text-center">
               <Label className="font-bold text-nowrap text-lg">
-                3. Escolha e Configure
+                {i18n.howToUseSection.steps[2].title}
               </Label>
               <Label className="text-sm text-keiko-gray">
-                Ative e personalize as funcionalidades como preferir.
+                {i18n.howToUseSection.steps[2].description}
               </Label>
             </div>
           </div>
         </div>
         <div className="pt-28 md:pt-32">
           <Image
-            src={'/KEIKO_HOW_TO_USE.gif'}
-            alt="Keiko-Image-01"
+            src={`KEIKO_HOW_TO_USE_${lang.toUpperCase()}.gif`}
+            alt="keiko-how-to-use-gif"
             width={900}
             height={400}
             unoptimized

@@ -29,7 +29,7 @@ export function WelcomeMessages({ className }: { className?: string }) {
             </div>
             <Image
               src={`/KEIKO_WELCOME.png`}
-              alt="keiko-welcome"
+              alt="keiko-welcome-image"
               width={400}
               height={400}
             />

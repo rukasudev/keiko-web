@@ -53,7 +53,7 @@ export function MultiLanguage({ className }: { className?: string }) {
           <Circle ref={div6Ref} className="size-16 bg-keiko-orange">
             <Image
               src={`/KEIKO_FACE_01.png`}
-              alt="Keiko-Face-Image-01"
+              alt="keiko-multi-language-image"
               width={400}
               height={400}
             />

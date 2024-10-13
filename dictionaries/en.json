@@ -1,0 +1,120 @@
+{
+  "title": "Keiko Bot",
+  "description": "Keiko is a discord bot that helps manage the server.",
+  "invitePrimary": "Invite",
+  "inviteSecondary": "Invite now",
+  "navbar": {
+    "about": "About",
+    "uniqueFeatures": "Advantages",
+    "howToUse": "How to use",
+    "features": "Features",
+    "support": "Support"
+  },
+  "selectLanguage": {
+    "title": "Language",
+    "languages": [
+      "Portuguese",
+      "English"
+    ]
+  },
+  "heroSection": {
+    "title": "Keiko Bot",
+    "description": "A loyal Discord companion with moderations, utilities, and alerts! ✨",
+    "chatBallon": {
+      "author": "Keiko",
+      "label": "APP",
+      "message": "Hello, I'm Keiko! 🐶"
+    }
+  },
+  "aboutSection": {
+    "title": "Create an amazing community with Keiko!",
+    "description": "Keiko is more than a bot, he is your adventure companion on Discord!",
+    "subtitles": [{
+        "title": "Human and friendly support!",
+        "description": "With support always ready to lend a hand (paw) with a smile! Call us using /support!"
+      },
+      {
+        "title": "Made for you and your server sz",
+        "description": "From custom commands to welcome messages, Keiko adapts to your style."
+      }
+    ]
+  },
+  "advantageSection": {
+    "title": "With unique features!",
+    "description": "Keiko has a variety of unique features! Here are some of our favorites",
+    "cta": "Learn more (Coming soon)",
+    "features": [{
+        "name": "Twitch and Youtube notifications",
+        "description": "Notifications from multiple Streamers/Youtubers!"
+      },
+      {
+        "name": "Welcome messages",
+        "description": "Custom welcome messages for new members!"
+      },
+      {
+        "name": "Multilanguage and translations",
+        "description": "Support for multiple languages and message translations!"
+      },
+      {
+        "name": "Easy management",
+        "description": "Through Discord buttons, edit, pause, or disable features when necessary, with total flexibility and no complications."
+      }
+    ]
+  },
+  "howToUseSection": {
+    "title": "Set everything up directly through Discord",
+    "description": "See how easy it is to call Keiko and start having fun 🐶",
+    "steps": [{
+        "title": "1. Invite Keiko",
+        "description": "Add Keiko to your Discord server."
+      },
+      {
+        "title": "2. Use commands with /",
+        "description": "Use the /help command to see all the features."
+      },
+      {
+        "title": "3. Customize Keiko",
+        "description": "Activate the features you want and customize them to your liking."
+      }
+    ]
+  },
+  "featuresSection": {
+    "title": "Discover how Keiko can help you!",
+    "description": "See some of the features that Keiko offers!",
+    "secondTitle": "Ready to boost your server?",
+    "secondDescription": "Moderator, assistant, and friend! Keiko does everything to make your community even more fun.",
+    "features": [
+      {
+        "name": "Notifications",
+        "description": "Don't miss any live streams or videos! Keiko will notify you about everything."
+      },
+      {
+        "name": "Moderation",
+        "description": "Blocks unwanted links, welcomes new members, assigns roles, and much more!"
+      },
+      {
+        "name": "Translations",
+        "description": "Break the language barrier! Keiko translates the messages for you."
+      },
+      {
+        "name": "Support",
+        "description": "Always ready to help you with any questions or problems you may have."
+      }
+    ]
+  },
+  "footerSection": {
+    "copyRight": "© 2024 Copyright. All rights reserved.",
+    "madeBy": "Made with ❤️ by @rukasudev",
+    "links": [
+      "About",
+      "Advantages",
+      "Features",
+      "How to use",
+      "Support"
+    ],
+    "legal": [
+      "Terms of use",
+      "Privacy policy"
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "title": "Keiko Bot",
+  "description": "Keiko é um bot de discord que ajuda a gerenciar o servidor.",
+  "invitePrimary": "Convidar",
+  "inviteSecondary": "Convidar agora",
+  "navbar": {
+    "about": "Sobre",
+    "uniqueFeatures": "Diferenciais únicos",
+    "howToUse": "Como utilizar",
+    "features": "Funcionalidades",
+    "support": "Suporte"
+  },
+  "selectLanguage": {
+    "title": "Idioma",
+    "languages": [
+      "Português",
+      "Inglês"
+    ]
+  },
+  "heroSection": {
+    "title": "Keiko Bot",
+    "description": "Um leal companheiro do Discord com moderações, utilidades e alertas! ✨",
+    "chatBallon": {
+      "author": "Keiko",
+      "label": "APP",
+      "message": "Olá, eu sou o Keiko! 🐶"
+    }
+  },
+  "aboutSection": {
+    "title": "Crie uma comunidade incrível com o Keiko!",
+    "description": "O Keiko é mais que um bot, ele é o seu companheiro de aventuras no Discord!",
+    "subtitles": [{
+        "title": "Suporte humano e amigável!",
+        "description": "Com o suporte sempre pronto para dar aquela mãozinha (patinha) com um sorriso! Nos chame utilizando /suporte!"
+      },
+      {
+        "title": "Feito para você e seu servidor sz",
+        "description": "Desde comandos personalizados até mensagens de boas-vindas, o Keiko se adapta ao seu estilo."
+      }
+    ]
+  },
+  "advantageSection": {
+    "title": "Com diferenciais únicos!",
+    "description": "O Keiko tem uma variedade de recursos únicos! Aqui estão alguns dos nossos favoritos",
+    "cta": "Saiba mais (Em breve)",
+    "features": [{
+        "name": "Notificações da Twitch e Youtube",
+        "description": "Notificações de Multiplos Streamers/Youtubers!"
+      },
+      {
+        "name": "Mensagens de boas-vindas",
+        "description": "Mensagens de boas-vindas personalizadas para novos membros!"
+      },
+      {
+        "name": "Multilínguas e traduções",
+        "description": "Suporte a vários idiomas e traduções de mensagens!"
+      },
+      {
+        "name": "Fácil gerenciamento",
+        "description": "Através dos botões do Discord, edite, pause ou desabilite funcionalidades quando necessário, com total flexibilidade e sem complicações."
+      }
+    ]
+  },
+  "howToUseSection": {
+    "title": "Configure tudo diretamente pelo Discord",
+    "description": "Veja como é fácil chamar o Keiko e já sair se divertindo 🐶",
+    "steps": [{
+        "title": "1. Convide Keiko",
+        "description": "Adicione Keiko ao seu servidor do Discord."
+      },
+      {
+        "title": "2. Utilize os comandos com /",
+        "description": "Use o comando /ajuda para ver todas as funcionalidades."
+      },
+      {
+        "title": "3. Personalize o Keiko",
+        "description": "Ative e personalize as funcionalidades como preferir."
+      }]
+  },
+  "featuresSection": {
+    "title": "Descubra como o Keiko pode te ajudar!",
+    "description": "Veja alguns dos recursos que o Keiko oferece!",
+    "secondTitle": "Pronto para turbinar seu servidor?",
+    "secondDescription": "Moderador, assistente e amigo! O Keiko faz tudo para sua comunidade ficar ainda mais divertida.",
+    "features": [{
+        "name": "Notificações",
+        "description": "Não perca nenhuma live ou vídeo! Keiko te avisa de tudo."
+      },
+      {
+        "name": "Moderações",
+        "description": "Bloqueia links indesejados, dá boas-vindas aos novos membros, adiciona cargos e muito mais!"
+      },
+      {
+        "name": "Traduções",
+        "description": "Quebra a barreira do idioma! O Keiko traduz as mensagens pra você."
+      },
+      {
+        "name": "Suporte",
+        "description": "Sempre pronto para te ajudar com qualquer dúvida que surgir."
+      }
+    ]
+  },
+  "footerSection": {
+    "copyRight": "© 2024 Copyright. Todos os direitos reservados.",
+    "madeBy": "Feito com ❤️ por @rukasudev",
+    "links": [
+      "Sobre",
+      "Diferenciais únicos",
+      "Funcionalidades",
+      "Como utilizar",
+      "Suporte"
+    ],
+    "legal": [
+      "Termos de uso",
+      "Política de privacidade"
+    ]
+  }
+}

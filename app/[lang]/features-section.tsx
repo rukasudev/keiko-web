@@ -1,11 +1,17 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
+import { I18nContext } from '@/providers/i18nProvider'
 import { BellRing, Globe, HandHelping, Swords } from 'lucide-react'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { useContext } from 'react'
 
 export default function FeaturesSection() {
+  const { i18n } = useContext(I18nContext)
+
   return (
     <>
       <section className="flex flex-col">
@@ -22,7 +28,7 @@ export default function FeaturesSection() {
         >
           <div className="container flex flex-col items-center space-y-8 pt-24">
             <Label className="text-3xl text-white font-bold text-center">
-              Descubra como o Keiko pode te ajudar!
+              {i18n.featuresSection.title}
             </Label>
           </div>
           <div className="container grid gap-12 md:grid-cols-2 md:gap-24 pt-16 justify-items-end">
@@ -32,10 +38,10 @@ export default function FeaturesSection() {
               </div>
               <div className="flex flex-col">
                 <Label className="text-white text-xl font-bold">
-                  Notificações
+                  {i18n.featuresSection.features[0].name}
                 </Label>
                 <Label className="text-white/70 text-base max-w-sm">
-                  Não perca nenhuma live ou vídeo! Keiko te avisa de tudo.
+                  {i18n.featuresSection.features[0].description}
                 </Label>
               </div>
             </div>
@@ -45,11 +51,10 @@ export default function FeaturesSection() {
               </div>
               <div className="flex flex-col">
                 <Label className="text-white text-xl font-bold">
-                  Moderações
+                  {i18n.featuresSection.features[1].name}
                 </Label>
                 <Label className="text-white/70 text-base max-w-sm text-balance">
-                  Bloqueia links indesejados, dá boas-vindas aos novos membros,
-                  adiciona cargos e muito mais!
+                  {i18n.featuresSection.features[1].description}
                 </Label>
               </div>
             </div>
@@ -59,11 +64,10 @@ export default function FeaturesSection() {
               </div>
               <div className="flex flex-col">
                 <Label className="text-white text-xl font-bold">
-                  Traduções
+                  {i18n.featuresSection.features[2].name}
                 </Label>
                 <Label className="text-white/70 text-base max-w-sm text-balance">
-                  Quebra a barreira do idioma! O Keiko traduz as mensagens pra
-                  você.
+                  {i18n.featuresSection.features[2].description}
                 </Label>
               </div>
             </div>
@@ -72,9 +76,11 @@ export default function FeaturesSection() {
                 <HandHelping color="white" />
               </div>
               <div className="flex flex-col">
-                <Label className="text-white text-xl font-bold">Suporte</Label>
+                <Label className="text-white text-xl font-bold">
+                  {i18n.featuresSection.features[3].name}
+                </Label>
                 <Label className="text-white/70 text-base max-w-sm text-balance">
-                  Sempre pronto para te ajudar com qualquer dúvida que surgir.
+                  {i18n.featuresSection.features[3].description}
                 </Label>
               </div>
             </div>
@@ -83,11 +89,10 @@ export default function FeaturesSection() {
           <div className="container flex flex-col md:flex-row space-y-2 space-x-2 items-center justify-center">
             <div className="flex flex-col space-y-2">
               <Label className="text-white text-3xl font-bold text-center">
-                Pronto para turbinar seu servidor?
+                {i18n.featuresSection.secondTitle}
               </Label>
               <Label className="text-1xl text-white/70 text-center text-balance">
-                Moderador, assistente e amigo! O Keiko faz tudo para sua
-                comunidade ficar ainda mais divertida.
+                {i18n.featuresSection.secondDescription}
               </Label>
               <div className="flex items-center justify-center pt-4">
                 <Button
@@ -100,14 +105,14 @@ export default function FeaturesSection() {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Convidar agora
+                    {i18n.inviteSecondary}
                   </Link>
                 </Button>
               </div>
             </div>
             <Image
               src={'/KEIKO_03.png'}
-              alt="Keiko-Image-03"
+              alt="keiko-features-section-image-03"
               width={400}
               height={400}
             />
