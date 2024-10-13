@@ -3,6 +3,8 @@
 import { cn } from '@/lib/utils'
 import { AnimatedList } from '@/components/magicui/animated-list'
 import Image from 'next/image'
+import { useContext } from 'react'
+import { I18nContext } from '@/providers/i18nProvider'
 
 interface Item {
   name: string
@@ -11,32 +13,6 @@ interface Item {
   color: string
   time: string
 }
-
-let notifications = [
-  {
-    name: 'Keiko',
-    description: 'Alanzoka está ao vivo agora na Twitch!',
-    time: 'há 10m',
-    icon: 'KEIKO_FACE_01',
-    color: '#7289da',
-  },
-  {
-    name: 'Keiko',
-    description: 'PewDiePie lançou um novo vídeo!',
-    time: 'há 5m',
-    icon: 'KEIKO_FACE_02',
-    color: '#7289da',
-  },
-  {
-    name: 'Keiko',
-    description: 'Shroud está ao vivo! Assista agora em...',
-    time: 'agora',
-    icon: 'KEIKO_FACE_03',
-    color: '#7289da',
-  },
-]
-
-notifications = Array.from({ length: 10 }, () => notifications).flat()
 
 const Notification = ({ name, description, icon, color, time }: Item) => {
   return (
@@ -87,6 +63,34 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 }
 
 export function NotificationsList({ className }: { className?: string }) {
+  const { i18n } = useContext(I18nContext)
+
+  let notifications = [
+    {
+      name: 'Keiko',
+      description: i18n.advantageSection.notifications[0].description,
+      time: i18n.advantageSection.notifications[0].time,
+      icon: 'KEIKO_FACE_01',
+      color: '#7289da',
+    },
+    {
+      name: 'Keiko',
+      description: i18n.advantageSection.notifications[1].description,
+      time: i18n.advantageSection.notifications[1].time,
+      icon: 'KEIKO_FACE_02',
+      color: '#7289da',
+    },
+    {
+      name: 'Keiko',
+      description: i18n.advantageSection.notifications[2].description,
+      time: i18n.advantageSection.notifications[2].time,
+      icon: 'KEIKO_FACE_03',
+      color: '#7289da',
+    },
+  ]
+
+  notifications = Array.from({ length: 10 }, () => notifications).flat()
+
   return (
     <div
       className={cn(

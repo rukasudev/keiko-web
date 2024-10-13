@@ -59,7 +59,30 @@
         "name": "Easy management",
         "description": "Through Discord buttons, edit, pause, or disable features when necessary, with total flexibility and no complications."
       }
-    ]
+    ],
+    "notifications": [
+      {
+        "description": "Shroud is live on Twitch!",
+        "time": "1h ago"
+      },
+      {
+        "description": "New video from PewDiePie!",
+        "time": "10m ago"
+      },
+      {
+        "description": "Ninja is live now! Watch it!",
+        "time": "now"
+      }
+    ],
+    "welcomeMessage": {
+      "title": "A new member has arrived! 🎉",
+      "description": "Welcome to the server!"
+    },
+    "managementButtons": {
+      "edit": "Edit",
+      "pause": "Pause",
+      "disable": "Disable"
+    }
   },
   "howToUseSection": {
     "title": "Set everything up directly through Discord",

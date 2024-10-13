@@ -1,8 +1,12 @@
 import { cn } from '@/lib/utils'
 import { Label } from '@/components/ui/label'
 import Image from 'next/image'
+import { I18nContext } from '@/providers/i18nProvider'
+import { useContext } from 'react'
 
 export function WelcomeMessages({ className }: { className?: string }) {
+  const { i18n } = useContext(I18nContext)
+
   return (
     <div
       className={cn(
@@ -16,12 +20,12 @@ export function WelcomeMessages({ className }: { className?: string }) {
         <div className="w-1 bg-keiko-bg-primary pr-1" />
         <div className="w-full h-96 bg-[#535458] flex flex-col p-4 space-y-2 shadow-lg">
           <Label className="text-white font-bold">
-            Um novo membro chegou! 🎉
+            {i18n.advantageSection.welcomeMessage.title}
           </Label>
           <div className="flex flex-col space-y-2">
             <div>
               <Label className="text-white text-xs text-nowrap">
-                Bem vindo ao servidor!
+                {i18n.advantageSection.welcomeMessage.description}
               </Label>
               <Label className="text-blue-300 text-xs pl-1">
                 @CasquinhaDeBala

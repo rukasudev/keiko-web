@@ -59,7 +59,30 @@
         "name": "Fácil gerenciamento",
         "description": "Através dos botões do Discord, edite, pause ou desabilite funcionalidades quando necessário, com total flexibilidade e sem complicações."
       }
-    ]
+    ],
+    "notifications": [
+      {
+        "description": "Alanzoka está ao vivo na Twitch 🎉",
+        "time": "há 10m"
+      },
+      {
+        "description": "Novo vídeo do Orochinho!",
+        "time": "há 5m"
+      },
+      {
+        "description": "Casimiro está ao vivo! Assista agora em...",
+        "time": "agora"
+      }
+    ],
+    "welcomeMessage": {
+      "title": "Um novo membro chegou! 🎉",
+      "description": "Bem-vindo ao servidor!"
+    },
+    "managementButtons": {
+      "edit": "Editar",
+      "pause": "Pausar",
+      "disable": "Desabilitar"
+    }
   },
   "howToUseSection": {
     "title": "Configure tudo diretamente pelo Discord",

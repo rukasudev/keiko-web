@@ -3,7 +3,7 @@ import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 
 const defaultLocale = 'pt'
-const locales = ['en', 'pt']
+const locales = ['pt', 'en']
 
 function getLocale(request: NextRequest) {
   const acceptedLanguage = request.headers.get('accept-language') ?? undefined

@@ -1,7 +1,11 @@
 import { cn } from '@/lib/utils'
 import { Button } from './ui/button'
+import { I18nContext } from '@/providers/i18nProvider'
+import { useContext } from 'react'
 
 export function ManagmentButtons({ className }: { className?: string }) {
+  const { i18n } = useContext(I18nContext)
+
   return (
     <div
       className={cn(
@@ -13,13 +17,13 @@ export function ManagmentButtons({ className }: { className?: string }) {
     >
       <div className="flex items-center justify-center space-x-2 mb-24 h-full">
         <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold ">
-          📝 Editar
+          📝 {i18n.advantageSection.managementButtons.edit}
         </Button>
         <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold">
-          ⏸️ Pausar
+          ⏸️ {i18n.advantageSection.managementButtons.pause}
         </Button>
         <Button size="sm" className="bg-[#4E5058] shadow-lg font-semibold">
-          🚫 Desabilitar
+          🚫 {i18n.advantageSection.managementButtons.disable}
         </Button>
       </div>
     </div>
