@@ -28,6 +28,18 @@ export function middleware(request: any) {
     return NextResponse.next()
   }
 
+  if (pathname?.includes('/invite')) {
+    return NextResponse.redirect(
+      new URL('/v1/invite', 'https://api.keikobot.com'),
+    )
+  }
+
+  if (pathname?.includes('/support')) {
+    return NextResponse.redirect(
+      new URL('/v1/support', 'https://api.keikobot.com'),
+    )
+  }
+
   if (pathnameHasLocale) return
 
   const locale = getLocale(request)
