@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
 
@@ -9,9 +9,12 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Keiko Bot ✨',
-  description:
-    'Keiko Bot is an multi-purpose Discord bot that helps you manage your server with ease.',
+  metadataBase: new URL('https://keikobot.com'),
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
@@ -20,14 +23,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
-      <body
-        className={`${inter.variable} font-inter tracking-tight antialiased`}
-      >
+    <html lang="pt" className={`${inter.variable} scroll-smooth`}>
+      <body className="font-inter tracking-tight antialiased">
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           {children}
         </div>

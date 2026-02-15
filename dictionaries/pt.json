@@ -1,6 +1,6 @@
 {
-  "title": "Keiko Bot",
-  "description": "Keiko é um bot de discord que ajuda a gerenciar o servidor.",
+  "title": "Keiko Bot - Bot de Moderacao e Utilidades para Discord",
+  "description": "Keiko e um bot multifuncional para Discord com moderacao, notificacoes da Twitch/YouTube, mensagens de boas-vindas e muito mais. Gratuito e facil de usar!",
   "invitePrimary": "Convidar",
   "inviteSecondary": "Convidar agora",
   "navbar": {
