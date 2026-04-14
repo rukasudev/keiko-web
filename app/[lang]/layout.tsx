@@ -76,6 +76,14 @@ export async function generateMetadata({
       images: [`${BASE_URL}/og-image.png`],
     },
 
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+      ],
+      apple: [{ url: '/apple-icon.png', sizes: '180x180' }],
+    },
+
     robots: {
       index: true,
       follow: true,
@@ -98,22 +106,47 @@ export default async function LangLayout({ children, params }: Props) {
 
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
-    name: 'Keiko Bot',
-    applicationCategory: 'UtilitiesApplication',
-    operatingSystem: 'Discord',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-    },
-    description: seoConfig[lang].description,
-    url: `${BASE_URL}/${lang}`,
-    image: `${BASE_URL}/og-image.png`,
-    author: {
-      '@type': 'Person',
-      name: 'rukasudev',
-    },
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        name: 'Keiko Bot',
+        url: BASE_URL,
+        inLanguage: lang === 'pt' ? 'pt-BR' : 'en-US',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: `${BASE_URL}/${lang}`,
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@type': 'Organization',
+        name: 'Keiko Bot',
+        url: BASE_URL,
+        logo: `${BASE_URL}/icon.png`,
+        sameAs: [
+          'https://github.com/rukasudev',
+          'https://api.keikobot.com/v1/invite',
+        ],
+      },
+      {
+        '@type': 'SoftwareApplication',
+        name: 'Keiko Bot',
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Discord',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+        },
+        description: seoConfig[lang].description,
+        url: `${BASE_URL}/${lang}`,
+        image: `${BASE_URL}/og-image.png`,
+        author: {
+          '@type': 'Person',
+          name: 'rukasudev',
+        },
+      },
+    ],
   }
 
   return (
