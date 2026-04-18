@@ -1,6 +1,14 @@
 import { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { Locale } from '@/dictionaries'
+import '../../styles/globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 const BASE_URL = 'https://keikobot.com'
 
@@ -33,7 +41,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params
   const config = seoConfig[lang]
-  const canonicalUrl = `${BASE_URL}/${lang}`
+  const canonicalUrl = lang === 'en' ? BASE_URL : `${BASE_URL}/${lang}`
 
   return {
     title: config.title,
@@ -45,9 +53,9 @@ export async function generateMetadata({
     alternates: {
       canonical: canonicalUrl,
       languages: {
+        en: BASE_URL,
         pt: `${BASE_URL}/pt`,
-        en: `${BASE_URL}/en`,
-        'x-default': `${BASE_URL}/pt`,
+        'x-default': BASE_URL,
       },
     },
 
@@ -112,11 +120,6 @@ export default async function LangLayout({ children, params }: Props) {
         name: 'Keiko Bot',
         url: BASE_URL,
         inLanguage: lang === 'pt' ? 'pt-BR' : 'en-US',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: `${BASE_URL}/${lang}`,
-          'query-input': 'required name=search_term_string',
-        },
       },
       {
         '@type': 'Organization',
@@ -139,7 +142,7 @@ export default async function LangLayout({ children, params }: Props) {
           priceCurrency: 'USD',
         },
         description: seoConfig[lang].description,
-        url: `${BASE_URL}/${lang}`,
+        url: lang === 'en' ? BASE_URL : `${BASE_URL}/${lang}`,
         image: `${BASE_URL}/og-image.png`,
         author: {
           '@type': 'Person',
@@ -150,13 +153,17 @@ export default async function LangLayout({ children, params }: Props) {
   }
 
   return (
-    <>
-      <Script
-        id="json-ld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {children}
-    </>
+    <html lang={lang} className={`${inter.variable} scroll-smooth`}>
+      <body className="font-inter tracking-tight antialiased">
+        <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
+          <Script
+            id="json-ld"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          {children}
+        </div>
+      </body>
+    </html>
   )
 }

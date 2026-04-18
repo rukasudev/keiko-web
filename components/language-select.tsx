@@ -17,17 +17,19 @@ export function LanguageSelect() {
   const router = useRouter()
   const [selectedLang, setSelectedLang] = useState(lang)
 
+  const getPathForLang = (lang: string) => (lang === 'en' ? '/' : `/${lang}`)
+
   const handleLanguageChange = (newLang: string) => {
     setSelectedLang(newLang)
     localStorage.setItem('userLang', newLang)
-    router.push(`/${newLang}`)
+    router.push(getPathForLang(newLang))
   }
 
   useEffect(() => {
     const savedLang = localStorage.getItem('userLang') || 'pt'
     if (savedLang !== selectedLang) {
       setSelectedLang(savedLang)
-      router.push(`/${savedLang}`)
+      router.push(getPathForLang(savedLang))
     }
   }, [selectedLang, router])
 
